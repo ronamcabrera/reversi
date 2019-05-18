@@ -10,7 +10,7 @@
     </style>
     <script>
       function submitForm(){
-        var username =$('#username').val();
+        var username = $('#username').val();
         window.location.href = 'lobby.html?username='+username;
       }
     </script>
@@ -27,7 +27,7 @@
       </div>
       <div class='row'>
         <div class="col">
-          <form onsumbit='submitForm(); return false;' class='form-inline'>
+          <form onsubmit='submitForm(); return false;' class='form-inline'>
             <div class='form-group'>
               <label for='username' class='col-form-label sr-only' >Enter your user name</label>
               <input class='form-control' type='text' value='' id='username' placeholder='Enter your user name'/>
