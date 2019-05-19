@@ -37,11 +37,12 @@ socket.on('join_room_response',function(payload){
 });
 
 socket.on('send_message_response',function(payload){
+	console.log('here');
 	if(payload.result == 'fail'){
 		alert(payload.message);
 		return;
 	}
-	$('#messages').append('<p><b> '+payload.username+' says:</b> '+payload.message+'</p>');
+	$('#messages').append('<p><b>'+payload.username+' says:</b> '+payload.message+'</p>');
 });
 
 
