@@ -29,7 +29,7 @@ socket.on('log',function(array){
 
 
 socket.on('join_room_response',function(payload){
-	console.log('here');
+	console.log("here");
 	if(payload.result == 'fail'){
 		alert(payload.message);
 		return;
@@ -38,7 +38,7 @@ socket.on('join_room_response',function(payload){
 });
 
 socket.on('send_message_response',function(payload){
-	console.log('here');
+	console.log("here");
 	if(payload.result == 'fail'){
 		alert(payload.message);
 		return;
@@ -60,7 +60,7 @@ $(function(){
 	var payload = {};
 	payload.room = chat_room;
 	payload.username = username;
-
+	
 	console.log('*** Client Log Message: \'join_room\' payload: '+JSON.stringify(payload));
 	socket.emit('join_room',payload);
 });
