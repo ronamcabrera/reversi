@@ -109,7 +109,8 @@ io.sockets.on('connection', function (socket){
 
 		var roomObject = io.sockets.adapter.rooms[room];
 		if(('undefined' === typeof roomObject) || !roomObject){
-			var error_message = 'join_room couldn\'t create a room, command aborted';
+			var error_message = 'join_room couldn\'t create a room (internal error), command aborted';
+			
 			log(error_message);
 			socket.emit('join_room_response', {
 												result: 'fail',
