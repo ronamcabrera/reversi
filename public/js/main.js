@@ -420,8 +420,10 @@ socket.on('game_update',function(payload){
 		}
 	}
 
-	$('#blacksum').html('<h6 style="color: #FFFFFF;">'+blacksum+'</h6>')
-	$('#whitesum').html('<h6 style="color: #FFFFFF;">'+whitesum+'</h6>')
+	/*$('#blacksum').html('<h6 style="color: #FFFFFF;">'+blacksum+'</h6>')
+	$('#whitesum').html('<h6 style="color: #FFFFFF;">'+whitesum+'</h6>')*/
+	$('#blacksum').html(blacksum)
+	$('#whitesum').html(whitesum)
 
 	old_board = board;
  });
