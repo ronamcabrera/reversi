@@ -419,9 +419,9 @@ socket.on('game_update',function(payload){
 			}
 		}
 	}
-	
-	$('#blacksum').html('<h3 id="my_color" style="color: #FFFFFF;">'+blacksum+'</h3>')
-	$('#whitesum').html('<h3 id="my_color" style="color: #FFFFFF;">'+whitesum+'</h3>')
+
+	$('#blacksum').html('<h4 style="color: #FFFFFF;">'+blacksum+'</h4>')
+	$('#whitesum').html('<h4 style="color: #FFFFFF;">'+whitesum+'</h4>')
 
 	old_board = board;
  });
